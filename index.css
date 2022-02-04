@@ -1,0 +1,114 @@
+.register {
+      background: rgb(236, 230, 230);
+      width: 700px;
+      box-shadow: 5px 5px 5px 5px rgb(235, 226, 226);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      margin-left: 400px;
+      margin-top: 100px;
+  }
+  
+  .register__logo {
+    margin-top: 10px;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
+.jk input{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 50px;
+      border-radius: 10px;
+     margin-bottom: 10px;
+  }
+
+  .jk input::-webkit-input-placeholder {
+    font-size: 17px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    color: rgba(128,128,128,0.8);
+    padding-left: 10px;
+  }
+  .y5{
+      background: blue;
+      color: rgb(206, 183, 183);
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 17px;
+      text-transform: capitalize;
+      cursor: pointer;
+  }
+  input.ng-invalid.ng-touched{
+      border: 1px solid red;
+  }
+  input.ng-valid.ng-touched{
+    border: 1px solid rgb(68, 0, 255);
+}
+.ng-invalid .y5{
+    display: none;
+}
+.jk p{
+    color: red;
+}
+
+.red{
+  background: red;
+  width: 400px;
+  height: 1250px;
+}
+.blue{
+  background: blue;
+  width: 400px;
+  height: 1250px;
+}
+.green{
+  background: green;
+  width: 400px;
+  height: 1250px;
+}
+.rom{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 800px;
+}
+.rtr{
+  position: fixed;
+  background: wheat;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 32px;
+  bottom: 16px;
+  font-size: 32px;
+  border-radius: 15px;
+  pointer-events: none;
+  transition: all .5s;
+  opacity: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.rtr.xyz{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.home{
+  background: rgb(179, 136, 136);
+  height: 70px;
+  width: 100%;
+  top: 0;
+ bottom: 0;
+ z-index: 100;
+ position: fixed;
+}

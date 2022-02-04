@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app=''>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajon Mia</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+   <section class="card regester">
+     <form name="myFrom" invalidate>
+      <div class="register" >
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" class="register__logo" />
+        <div>
+          <p>signup for facebook</p>
+        </div>
+        <div class="jk">
+          <input class="y1" type="text" placeholder="fist name" ng-Model="user.fistname" name="fistname" ng-required='true'/><br/>
+          <p ng-show='myFrom.fistname.$invalid && myFrom.fistname.$touched'>Plaease fill out the following from</p>
+          <input class="y2"  type="text" placeholder="last name" ng-Model="user.lastnaame" name="lastname" ng-required='true'/><br/>
+          <p ng-show='myFrom.lastname.$invalid && myFrom.lastname.$touched'>Plaease fill out the following from</p>
+          <input class="y3"  type="email" placeholder="Email" ng-Model="user.email" name="email" ng-required='true'/><br/>
+          <p ng-show='myFrom.email.$invalid&& myFrom.email.$touched'>Don`t valid email</p>
+          <input class="y4"  type="password" placeholder="Password" ng-Model="user.password" name="password" ng-minlength="6" ng-required='true'/><br/>
+          <p ng-show='myFrom.password.$invalid && myFrom.password.$touched'>Password mast be 6 carter</p>
+          <input class="y5"  type="submit" value="submit" onclick="romjan()">
+        </div>
+      </div> 
+     </form>
+      
+   </section>
+  </div>
+  <div class="home">
+  </div>
+
+  <div class="rom">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="rtr">
+      <a href="#"><span class="material-icons">
+        expand_more
+        </span></a>
+    </div>
+  </div>
+
+  <script>
+    const d1 = document.querySelector('.rtr');
+    const d2 = document.querySelector('y2');
+    const d3 = document.querySelector('y3');
+    const d4 = document.querySelector('y4');
+    const d5 = document.querySelector('y5');
+
+    window.addEventListener('scroll', () =>{
+      if(window.pageYOffset){
+        d1.classList.add ('xyz')
+      }else{
+        d1.classList.remove ('xyz')
+      }
+    }) 
+
+    function romjan(){
+        document.getElementsByClassName('page')[0].style.display = 'none';
+        document.getElementsByClassName('rom')[0].style.display = 'block';
+    }
+  </script>
+</body>
+</html>
